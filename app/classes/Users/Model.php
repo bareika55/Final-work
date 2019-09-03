@@ -18,8 +18,7 @@ class Model
     /** 2uzd turi irasyti $drink i duombaze
      * @param Drink $drink
      */
-    public function insert(User $user)
-    {
+    public function insert(User $user) {
         return App::$db->insertRow($this->table_name, $user->getData());
     }
 
@@ -28,8 +27,7 @@ class Model
      * @param array $conditions
      * @return User[]
      */
-    public function get($conditions = [])
-    {
+    public function get($conditions = []) {
         $users = [];
 
         $rows = App::$db->getRowsWhere($this->table_name, $conditions);
@@ -61,8 +59,7 @@ class Model
         App::$db->deleteRow($this->table_name, $user->getId());
     }
 
-    public function deleteAll()
-    {
+    public function deleteAll() {
         App::$db->truncateTable($this->table_name);
     }
 

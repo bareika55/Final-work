@@ -2,9 +2,11 @@
 
 namespace App\Users\Views;
 
-class RegisterForm extends \Core\Views\Form {
+class RegisterForm extends \Core\Views\Form
+{
 
-    public function __construct($data = []) {
+    public function __construct($data = [])
+    {
         $this->data = [
             'attr' => [
                 'id' => 'register-form',
@@ -17,11 +19,6 @@ class RegisterForm extends \Core\Views\Form {
                     'extra' => [
                         'validators' => [
                             'validate_not_empty',
-//                    'validate_length',
-//                    'validate_not_int',
-                        ],
-                        'attr' => [
-                            'required'
                         ],
                     ],
                 ],
@@ -31,8 +28,7 @@ class RegisterForm extends \Core\Views\Form {
                     'extra' => [
                         'validators' => [
                             'validate_not_empty',
-//                    'validate_length',
-//                    'validate_not_int',
+//                            'validate_is_not_number'
                         ],
                     ],
                 ],
@@ -42,8 +38,7 @@ class RegisterForm extends \Core\Views\Form {
                     'extra' => [
                         'validators' => [
                             'validate_not_empty',
-//                            'validate_mail',
-                            'validate_email',
+                            'validate_mail',
                         ],
                     ],
                 ],

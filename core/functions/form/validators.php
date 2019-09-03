@@ -27,7 +27,7 @@ function validate_not_empty($field_value, &$field) {
     }
 }
 
-function validate_is_number($field_value, &$field) {
+function validate_is_not_number($field_value, &$field) {
     if (!is_numeric($field_value)) {
         $field['error'] = 'Įveskite skaičių!';
     } else {

@@ -1,5 +1,5 @@
 {
-  "name": "SportClub",
+  "name": "Baigiamasis Projektas",
   "autoload": {
     "psr-4": {
       "App\\": "app/classes",

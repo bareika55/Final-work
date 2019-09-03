@@ -1,6 +1,7 @@
 body {
     font-family: Cambria;
 }
+
 /*======HEADER STYLE======*/
 header {
     background-color: cadetblue;
@@ -9,6 +10,7 @@ header {
     align-items: center;
     height: 70px;
 }
+
 /*======NAVIGATION STYLE======*/
 nav {
     display: flex;
@@ -116,6 +118,7 @@ td.delete {
 td.edit {
     display: none;
 }
+
 /*=====WELCOME BOX============*/
 .welcome-bgn {
     height: 300px;
@@ -180,6 +183,7 @@ td.edit {
 h2 {
     margin: 0;
 }
+
 /*==========FOOTER============*/
 footer {
     background-color: crimson;
@@ -189,6 +193,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 /*======ERROR STYLE========*/
 .error {
     background-color: red;

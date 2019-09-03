@@ -13,7 +13,9 @@ class User {
             $this->data = [
                 'id' => null,
                 'email' => null,
-                'password' => null
+                'password' => null,
+                'name' => null,
+                'surname' => null,
             ];
         }
     }
@@ -27,13 +29,17 @@ class User {
 
         $this->setEmail($array['email'] ?? null);
         $this->setPassword($array['password'] ?? null);
+        $this->setName($array['name'] ?? null);
+        $this->setSurname($array['surname'] ?? null);
     }
 
     public function getData() {
         return [
             'id' => $this->getId(),
             'email' => $this->getEmail(),
-            'password' => $this->getPassword()
+            'password' => $this->getPassword(),
+            'name' => $this->getName(),
+            'surname' => $this->getSurname(),
         ];
     }
 
@@ -59,6 +65,22 @@ class User {
 
     public function getPassword() {
         return $this->data['password'];
+    }
+
+    public function setName(String $name){
+        $this->data['name'] = $name;
+    }
+
+    public function getName() {
+        return $this->data['name'];
+    }
+
+    public function setSurname(String $surname) {
+        $this->data['surname'] = $surname;
+    }
+
+    public function getSurname() {
+        return $this->data['surname'];
     }
 
 }
