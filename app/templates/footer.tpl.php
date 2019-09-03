@@ -1,0 +1,1 @@
+<span>&copy; <?php print date('Y') ?>. Kasparas Bareika, all rights reserved.</span>
