@@ -14,7 +14,7 @@ class RegisterForm extends \Core\Views\Form
             ],
             'fields' => [
                 'name' => [
-                    'label' => 'Name:',
+                    'label' => 'Vardas:',
                     'type' => 'text',
                     'extra' => [
                         'validators' => [
@@ -23,7 +23,7 @@ class RegisterForm extends \Core\Views\Form
                     ],
                 ],
                 'surname' => [
-                    'label' => 'Surname:',
+                    'label' => 'Pavardė:',
                     'type' => 'text',
                     'extra' => [
                         'validators' => [
@@ -33,7 +33,7 @@ class RegisterForm extends \Core\Views\Form
                     ],
                 ],
                 'email' => [
-                    'label' => 'Email:',
+                    'label' => 'El. Paštas:',
                     'type' => 'email',
                     'extra' => [
                         'validators' => [
@@ -43,7 +43,7 @@ class RegisterForm extends \Core\Views\Form
                     ],
                 ],
                 'password' => [
-                    'label' => 'Password:',
+                    'label' => 'Slaptažodis:',
                     'type' => 'password',
                     'extra' => [
                         'validators' => [
@@ -52,7 +52,7 @@ class RegisterForm extends \Core\Views\Form
                     ],
                 ],
                 'password2' => [
-                    'label' => 'Repeat password:',
+                    'label' => 'Pakartoti slaptažodį:',
                     'type' => 'password',
                     'extra' => [
                         'validators' => [
@@ -61,11 +61,11 @@ class RegisterForm extends \Core\Views\Form
                     ],
                 ],
                 'telephone' => [
-                    'label' => 'Telephone:',
+                    'label' => 'Telefono numeris:',
                     'type' => 'text',
                 ],
                 'address' => [
-                    'label' => 'Address:',
+                    'label' => 'Adresas:',
                     'type' => 'email',
                 ],
             ],
